@@ -1,0 +1,45 @@
+Git --> git is a version control cmd line interface which keep tracks of changes in the project and also provide the feature that more than one people can work on the same project and keep there work tracks
+--> Synchronizes code between different people 
+--> Test changes to the code without losing the original.
+--> Revert back to the old version of the code.
+GitHub --> github is the website which stores the all repositires.
+<!-- Git commands  -->
+<!-- first we create a new repo manually with the help of website git then -->
+<!-- very first command  -->
+git clone <url>(url is present in your git page that you made manually like https link)
+ls -> for the list of the files and folder present in the GitHub folder
+then choose the hello folder with the command cd hello and then you check ls inside hello folder you don't see any file 
+--> to create new file 
+type touch hello.html
+then  ls to check the hello.html file 
+then to add file to the git --> git add hello.html
+then to commit --> git commit -m "frist commit"
+then check git status 
+(optional)then the shorthand to write commit and changes --> git commit -am "add message"
+use git status 
+then git push
+now your file is push to the git you can check via visit website 
+for the pull --> type git pull
+you can see the new added file in your existing file in your local machine
+
+
+Merge Conflicts
+now let's take some case if somebody changes the same line of code that line you also change in your local file then
+it occure conflict error in your editor now to manage this you can manually check the code and make changes on your local file then 
+you can puch again 
+
+Git log --> to check all the commit simple type git log and you can see all the commits details
+Git reset --> to reset to the previous version of your commit or you can say that to go back to the previous commits in your local machine 
+type -> git reset --hard <commit hash>(here commit hash is your hash number you can give) like git reset --hard 383228
+or -> git reset --hard origin/master
+
+
+BRANCHING--> now you want to add new feature to the your existing branch or code you make branches
+master branch is your default branch and HEAD is pointing to that 
+now you can switch HEAD to the your new branch 
+to check branch --> git branch 
+switch to the new branch --> git checkout -b name of your branch (git checkout -b style)
+now check again --> git branch --> you see tow branches main and style in which now you are in style branch
+now your are in the style branch and make some changes in your local file and then commit it 
+now you want to switch style to main branch --> git checkout main
+now you can change something and then commit in your main branch 
